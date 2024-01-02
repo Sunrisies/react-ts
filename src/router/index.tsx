@@ -24,6 +24,7 @@ import Login from '../pages/Login'
 import About from '../pages/About'
 import Netdisk from '../pages/Netdisk'
 import Works from '../pages/Works';
+import MdPreview from "../pages/MdPreview.tsx";
 const router = createBrowserRouter([
   {
     path: '/',
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
       }, {
         path: 'works',
         element: <Works />
+      },
+      {
+        path:'MdPreview',
+        element:<MdPreview></MdPreview>
       }
     ]
   },
@@ -63,5 +68,6 @@ export const RouterPath =  {
   ABOUT: 'about',
   NETDISK: 'netdisk',
   NOTFOUND: '*',
-  WORKS: 'works'
+  WORKS: 'works',
+  MDPREVIEW:'MdPreview'
 }

@@ -4,6 +4,7 @@ import type { MenuProps } from 'antd'
 import { Breadcrumb, Layout, Menu, theme } from 'antd'
 import { Outlet,useNavigate } from 'react-router-dom'
 import {RouterPath} from '../router/index'
+import MdPreview from "../pages/MdPreview.tsx";
 
 const { Header, Content, Footer, Sider } = Layout
 
@@ -27,6 +28,7 @@ const HomeLayout: React.FC = () => {
     getItem('写作', RouterPath.WORKS, <DesktopOutlined />),
     getItem('关于', RouterPath.ABOUT, <UserOutlined />),
     getItem('登录', RouterPath.LOGIN, <UserOutlined />),
+      getItem('测试',RouterPath.MDPREVIEW, <UserOutlined />)
   ]
   const [collapsed, setCollapsed] = useState(false)
   const {
